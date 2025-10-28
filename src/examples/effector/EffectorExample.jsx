@@ -18,9 +18,6 @@ const CounterDisplay = () => {
   return (
     <div>
       <div className="counter-display">{count}</div>
-      <p style={{ textAlign: 'center', color: '#aaa' }}>
-        Двойное значение: {doubleCount}
-      </p>
     </div>
   )
 }
