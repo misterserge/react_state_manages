@@ -4,6 +4,7 @@ import ZustandExample from './examples/zustand/ZustandExample'
 import ReduxExample from './examples/redux/ReduxExample'
 import RTKExample from './examples/rtk/RTKExample'
 import JotaiExample from './examples/jotai/JotaiExample'
+import EffectorExample from './examples/effector/EffectorExample'
 
 const App = () => {
   const [activeTab, setActiveTab] = useState('react-state')
@@ -12,6 +13,7 @@ const App = () => {
     { id: 'react-state', label: 'React State + Context' },
     { id: 'zustand', label: 'Zustand' },
     { id: 'jotai', label: 'Jotai' },
+    { id: 'effector', label: 'Effector' },
     { id: 'redux', label: 'Redux Classic' },
     { id: 'rtk', label: 'Redux Toolkit' },
   ]
@@ -24,6 +26,8 @@ const App = () => {
         return <ZustandExample />
       case 'jotai':
         return <JotaiExample />
+      case 'effector':
+        return <EffectorExample />
       case 'redux':
         return <ReduxExample />
       case 'rtk':
